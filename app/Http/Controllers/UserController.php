@@ -48,11 +48,6 @@ class UserController extends Controller
         $users=User::find($id);
         
         $users->update($request->all());
-        // $users->first_name=$request['first_name'];
-        // $users->last_name=$request['last_name'];
-        // $users->email=$request['email'];
-        // $users->contact_number=$request['contact_number'];
-        // $users->save();
 
         return redirect('/users/view');
     }

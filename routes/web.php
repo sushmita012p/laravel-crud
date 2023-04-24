@@ -15,11 +15,11 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', [UserController::class, 'view'])->name('users.index');
+Route::get('/', [WelcomeController::class, 'index'])->name('welcome.index');
 Route::get('/users',[UserController::class, 'index']);
 Route::get('/users/create',[UserController::class, 'create'])->name('users.create');
-Route::post('/users',[UserController::class, 'store']);
-Route::get('/users/view',[UserController::class, 'view']);
+Route::post('/users',[UserController::class, 'store'])->name('users.store');
+Route::get('/users/view',[UserController::class, 'view'])->name('users.view');
 Route::get('/users/delete/{id}',[UserController::class, 'delete'])->name('users.delete');
 Route::get('/users/edit/{id}',[UserController::class, 'edit'])->name('users.edit');
 Route::put('/users/update/{id}',[UserController::class, 'update'])->name('users.update');

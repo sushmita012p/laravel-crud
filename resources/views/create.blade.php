@@ -11,7 +11,7 @@
     <div class="container">
     <h1 class="text-center">Create users</h1>
        
-       <form action="{{route('users.create')}}" method= "post">
+       <form action="{{route('users.store')}}" method= "post">
            @csrf
            <div class="form-group">
        <label for="exampleInputEmail1">First Name</label>
@@ -47,7 +47,7 @@
    </form>
     </div>
 
-   <a href="{{route('users.index')}}">Back to homepage</a>
+   <a href="{{route('welcome.index')}}">Back to homepage</a>
 </body>
 </html>
     
