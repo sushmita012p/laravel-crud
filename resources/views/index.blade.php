@@ -9,6 +9,7 @@
   <title>User</title>
 </head>
 <body>
+  <h3 class="text-center m-2">Users List</h3>
 <a href="{{route('users.create')}}"><button class="btn btn-primary float-right">Create User</button></a>
 @if(session()->has('success'))
   <h1>{{session()->get('success')}}</h1>

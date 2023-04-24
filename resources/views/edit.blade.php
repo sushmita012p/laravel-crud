@@ -48,7 +48,7 @@
    </form>
     </div>
 
-<a href="{{url('/')}}">Back to homepage</a>
+<a href="{{route('users.index')}}">Back to homepage</a>
 </body>
 </html>
     

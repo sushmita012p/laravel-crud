@@ -15,7 +15,7 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', [WelcomeController::class, 'index'])->name('welcome.index');
+Route::get('/', [UserController::class, 'view'])->name('users.index');
 Route::get('/users',[UserController::class, 'index']);
 Route::get('/users/create',[UserController::class, 'create'])->name('users.create');
 Route::post('/users',[UserController::class, 'store']);
